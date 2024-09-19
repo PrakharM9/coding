@@ -1,0 +1,1 @@
+{"name":"Local: patternalphabetspyramid","url":"d:\\Academics\\C++\\patternalphabetspyramid.cpp","tests":[{"id":1723615887562,"input":"","output":"   A\n  ABA\n ABCBA\nABCDCBA"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\patternalphabetspyramid.cpp","group":"local","local":true}

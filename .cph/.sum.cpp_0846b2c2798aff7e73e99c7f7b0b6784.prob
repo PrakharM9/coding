@@ -1,0 +1,1 @@
+{"name":"Local: sum","url":"d:\\Academics\\C++\\sum.cpp","tests":[{"id":1723531847882,"input":"3\nJohn Doe\n5\n80.5 90.0 75.5 85.0 92.0\nJane Smith\n4\n88.0 92.5 76.0 85.5\nAlice Johnson\n3\n70.0 65.5 80.0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\sum.cpp","group":"local","local":true}

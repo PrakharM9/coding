@@ -1,0 +1,1 @@
+{"name":"Local: patternalpha","url":"d:\\Academics\\C++\\patternalpha.cpp","tests":[{"id":1723621821066,"input":"","output":"E\nD E\nC D E\nB C D E\nA B C D E"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\patternalpha.cpp","group":"local","local":true}

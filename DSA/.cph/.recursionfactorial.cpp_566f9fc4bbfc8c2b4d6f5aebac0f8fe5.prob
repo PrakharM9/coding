@@ -1,0 +1,1 @@
+{"name":"Local: recursionfactorial","url":"d:\\Academics\\C++\\DSA\\recursionfactorial.cpp","tests":[{"id":1725704619345,"input":"5","output":"120"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\DSA\\recursionfactorial.cpp","group":"local","local":true}

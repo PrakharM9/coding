@@ -1,0 +1,1 @@
+{"name":"Local: starpattern","url":"d:\\Academics\\C++\\starpattern.cpp","tests":[{"id":1723569527874,"input":"","output":"    *\n   ***\n  *****\n *******\n*********\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\starpattern.cpp","group":"local","local":true}

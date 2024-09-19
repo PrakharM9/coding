@@ -1,0 +1,1 @@
+{"name":"Local: patterns","url":"d:\\Academics\\C++\\patterns.cpp","tests":[{"id":1723535984320,"input":"","output":"*\n**\n***\n****\n*****\n****\n***\n**\n*"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\patterns.cpp","group":"local","local":true}

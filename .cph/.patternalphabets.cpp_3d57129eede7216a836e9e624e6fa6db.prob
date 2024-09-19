@@ -1,0 +1,1 @@
+{"name":"Local: patternalphabets","url":"d:\\Academics\\C++\\patternalphabets.cpp","tests":[{"id":1723567569886,"input":"","output":"A\nAB\nABC\nABCD\nABCDE"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\patternalphabets.cpp","group":"local","local":true}
