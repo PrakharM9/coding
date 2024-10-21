@@ -1,17 +1,13 @@
-
-
-// C++ program to convert char
-// to int using stoi()
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
- 
-// Driver code
-int main() 
+
+int main()
 {
-  string str = "45";
-  int x = stoi(str);
-  cout << "The integer value of x : " << x<<endl;
-  cout<<to_string(x);
+  vector<int>per1{3,4,5,_,_,5};
+  vector<int>per2{3,4,5};
+  sort(per1.begin(),per2.end());
+  for(auto it:per1){
+    cout<<it<<" ";
+  }
   return 0;
 }

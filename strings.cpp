@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string s="Striver";
+    string s="509";
     int len=s.size();
     // for (int i = 0; i < len; i++)
     // {

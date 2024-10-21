@@ -13,6 +13,31 @@ class Node{
         next=nullptr;
     }
 };
+int callength(Node* head){
+    int count=0;
+    while(head!=NULL){
+        count++;
+        head=head->next;
+    }
+    return count;
+}
+Node* sort(Node* head){
+    int length=callength(head);
+    for(int i=0;i<length-1;i++){ 
+        Node* prev=head;
+        Node* current=head->next;
+        while(current!=NULL){
+            if(prev->data>current->data){
+                int temp=prev->data;
+                prev->data=current->data;
+                current->data=temp;
+            }
+            prev=current;
+            current=current->next;
+        }
+    }
+    return head;
+}
 void print(Node* head){
     while(head!=nullptr){
         cout<<head->data<<" ";
