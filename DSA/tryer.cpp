@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-void merge(vector<int>&arr,int low,int mid,int high){
+void merge(vector<int>& arr,int low,int mid,int high){
     vector<int>temp;
     int left=low,right=mid+1;
     while(left<=mid && right<=high){
@@ -25,10 +25,12 @@ void merge(vector<int>&arr,int low,int mid,int high){
         arr[i]=temp[i-low];
     }
 }
-void mergesort(vector<int>&arr,int low,int high){
-    if(low==high)return;
+void mergesort(vector<int>& arr,int low,int high){
+    if(low==high){
+        return;
+    }
     int mid=(low+high)/2;
-    mergesort(arr,low, mid);
+    mergesort(arr,low,mid);
     mergesort(arr,mid+1,high);
     merge(arr,low,mid,high);
 }
