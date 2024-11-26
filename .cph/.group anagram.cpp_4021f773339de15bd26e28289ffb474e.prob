@@ -1,0 +1,1 @@
+{"name":"Local: group anagram","url":"d:\\Academics\\C++\\group anagram.cpp","tests":[{"id":1728804986673,"input":"6\neat tea tan ate nat bat","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\group anagram.cpp","group":"local","local":true}
