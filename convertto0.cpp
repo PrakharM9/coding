@@ -1,18 +1,18 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
-    int num,count=0;
-    cin>>num;
-    while(num>0){
-        if(num%2==0){
-            num/=2;
-            count++;
-        }
-        else{
-            num-=1;
-            num/=2;
-            count++;
+class Solution {
+public:
+    int findComplement(int num) {
+        bitset<32> binary(num);
+        int complement=0;
+        while(binary>0){
+            
         }
     }
-    cout<<"Number of steps required is:"<<count;
+};
+int main()
+{
+  Solution sol;
+  cout<<sol.findComplement(5);
+  return 0;
 }

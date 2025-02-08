@@ -1,49 +1,75 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-void merge(vector<int>& arr,int low,int mid,int high){
-    vector<int>temp;
-    int left=low,right=mid+1;
-    while(left<=mid && right<=high){
-        if(arr[left]<=arr[right]){
-            temp.push_back(arr[left]);
-            left++;
+class Node{
+    public:
+    int data;
+    Node* next;
+    Node(int data1,Node* next1){
+        data=data1;
+        next=next1;
+    }
+    Node(int data1){
+        data=data1;
+        next=nullptr;
+    }
+};
+class Queue{
+    Node* start=NULL;
+    Node* end=NULL;
+    int csize=0;
+    public:
+    void push(int x){
+        Node* temp=new Node(x);
+        if(start==NULL){
+            start=temp;
+            end=temp;
         }
         else{
-            temp.push_back(arr[right]);
-            right++;
+            end->next=temp;
+            end=temp;
+        }
+        csize++;
+    }
+    int pop(){
+        if(start==NULL){
+            throw runtime_error("Queue Undeflow");
+        }
+        Node* temp=start;
+        int value=temp->data;
+        start=start->next;
+        csize--;
+        delete temp;
+        return value;
+    }
+    int top(){
+        if(start==NULL){
+            throw runtime_error("Queue Undeflow");
+        }
+        return start->data;
+    }
+    int size(){
+        return csize;
+    }
+    void print(){
+        Node* current=start;
+        while(current){
+            cout<<current->data<<" ";
+            current=current->next;
         }
     }
-    while(left<=mid){
-        temp.push_back(arr[left]);
-        left++;
-    }
-    while(right<=high){
-        temp.push_back(arr[right]);
-        right++;
-    }
-    for(int i=low;i<=high;i++){
-        arr[i]=temp[i-low];
-    }
-}
-void mergesort(vector<int>& arr,int low,int high){
-    if(low==high){
-        return;
-    }
-    int mid=(low+high)/2;
-    mergesort(arr,low,mid);
-    mergesort(arr,mid+1,high);
-    merge(arr,low,mid,high);
-}
-int main(){
+};
+int main()
+{
     int num;
+    Queue q;
     cin>>num;
-    vector<int>array(num);
     for(int i=0;i<num;i++){
-        cin>>array[i];
+        int value;
+        cin>>value;
+        q.push(value);
     }
-    mergesort(array,0,num-1);
-    for(int i=0;i<num;i++){
-        cout<<array[i]<<" ";
-    }
+    cout<<q.pop()<<endl;
+    cout<<q.top()<<endl;
+    q.print();
     return 0;
 }

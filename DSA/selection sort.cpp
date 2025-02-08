@@ -16,9 +16,7 @@ int main(){
                 index=j;
             }
         }
-        int temp=array[i];
-        array[i]=array[index];
-        array[index]=temp;
+        swap(array[i],array[index]);
 
     }
     for(int i=0;i<num;i++){

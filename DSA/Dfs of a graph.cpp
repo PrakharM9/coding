@@ -7,7 +7,7 @@ class Solution{
         ls.push_back(node);
         // traverse all its neighbours
         for(auto it:adj[node]){
-            if(!vis[i]){
+            if(!vis[it]){
                 dfs(it,adj,vis,ls);
             }
         }

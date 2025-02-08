@@ -13,8 +13,8 @@ class Node{
 };
 class priority_q{
     private:
-    public:
     Node* head;
+    public:
     priority_q(){
         head=nullptr;
     }

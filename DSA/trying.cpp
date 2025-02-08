@@ -1,48 +1,32 @@
-#include<bits/stdc++.h>
-void merege(int arr[],int low,int mid,int high){
-    vector<int>temp;
-    int left=low;
-    int right=mid+1;
-    while(left<=mid && right<=high){
-        if(arr[left]<=arr[right]){
-            temp.push_back(arr[left]);
-            left++;
-        }
-        else{
-            temp.push_back(arr[right]);
-            right++;
-        }
-    }
-    while(left<=mid){
-        temp.push_back(arr[left]);
-        left++;
-    }
-    while(right<=high){
-        temp.push_back(arr[right]);
-        right++;
-    }
-    for(int i=low;i<=high;i++){
-        arr[i]=temp[i-low];
-    }
-}
+#include <iostream>
+#include <string>
 using namespace std;
-void mergesort(int arr[],int low,int high){
-    if(low==high)return;
-    int mid=(low+high)/2;
-    mergesort(arr,low,mid);
-    mergesort(arr,mid+1,high);
-    merege(arr,low,mid,high);
+
+#define HASH_TABLE_SIZE 1000
+
+// Function to compute custom hash value
+long long customHash(const string& key) {
+    long long hashValue = 0;
+    for (char ch : key) {
+        hashValue = (hashValue * 37) + ch; // Hash function calculation
+    }
+    return hashValue % HASH_TABLE_SIZE;
 }
-int main(){
-    int num;
-    cin>>num;
-    int array[num];
-    for(int i=0;i<num;i++){
-        cin>>array[i];
+
+int main() {
+    while (true) {
+        string subject;
+        getline(cin, subject);
+
+        // Exit condition
+        if (subject == "exit") {
+            break;
+        }
+
+        // Calculate hash value for the subject name
+        long long hashValue = customHash(subject);
+        cout << hashValue << endl;
     }
-    mergesort(array,0,num-1);
-    for(int i=0;i<num;i++){
-        cout<<array[i]<<" ";
-    }
+
     return 0;
 }

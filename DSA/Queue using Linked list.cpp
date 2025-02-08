@@ -26,6 +26,7 @@ class Queue{
         }
         else{
             end->next=temp;
+            end=temp;
         }
         ssize+=1;
     }

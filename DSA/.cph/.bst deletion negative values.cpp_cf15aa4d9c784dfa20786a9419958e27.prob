@@ -1,0 +1,1 @@
+{"name":"Local: bst deletion negative values","url":"d:\\Academics\\C++\\DSA\\bst deletion negative values.cpp","tests":[{"id":1732701278132,"input":"5\n-2 -4 4 5 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\DSA\\bst deletion negative values.cpp","group":"local","local":true}
