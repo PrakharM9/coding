@@ -9,9 +9,9 @@ int main()
     for(int i=0;i<n;i++)cin>>arr[i];
 
     //precompute
-    int hash[13];
+    map<int, int> hash; 
     for(int i=0;i<n;i++){
-        hash[arr[i]]+=1;
+        hash[arr[i]]++;
     }
     int q;
     cin>>q;

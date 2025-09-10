@@ -1,0 +1,1 @@
+{"name":"Local: Longest subarray with sum k(optimal)","url":"d:\\Academics\\C++\\DSA\\Arrays\\Longest subarray with sum k(optimal).cpp","tests":[{"id":1757407022100,"input":"5\n1 -1 5 -2 3\n3","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\DSA\\Arrays\\Longest subarray with sum k(optimal).cpp","group":"local","local":true}

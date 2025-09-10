@@ -6,14 +6,16 @@ int main()
     cin>>s;
     int q;
     cin>>q;
-    int hash[26]={0};
+    //pre computing the frequency of each character
+    int hash[256]={0};
     for(int i=0;i<s.size();i++){
-        hash[s[i]-97]++;
+        hash[s[i]]++;
     }
     while(q--){
         char ch;
         cin>>ch;
-        cout<<hash[ch-97]<<endl;
+        //fetching the frequency of the character
+        cout<<hash[ch]<<endl;
     }
     return 0;
 }

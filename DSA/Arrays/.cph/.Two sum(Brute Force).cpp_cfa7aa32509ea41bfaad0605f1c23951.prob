@@ -1,0 +1,1 @@
+{"name":"Local: Two sum(Brute Force)","url":"d:\\Academics\\C++\\DSA\\Arrays\\Two sum(Brute Force).cpp","tests":[{"id":1757416842737,"input":"5\n2 4 6 2 3\n7","output":"Indices are: 1 and 4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\DSA\\Arrays\\Two sum(Brute Force).cpp","group":"local","local":true}
