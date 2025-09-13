@@ -2,29 +2,11 @@
 using namespace std;
 
 
-void solve()
-{
-    int n;
-    cin>>n;
-    vector<int>arr(n);
-    for (int i = 0; i < n; i++)
-    {
-        cin >>arr[i];
-    }
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i]<< endl;
-    }
-}
-
-
 int main()
 {
-    int t;
-    cin >> t;
-    for (int i = 0; i < t; i++)
-    {
-        solve();
+    vector<int>indices{0,4,8,20,14};
+    for(auto it:indices){
+        cout<<it<<" ";
     }
     return 0;
     

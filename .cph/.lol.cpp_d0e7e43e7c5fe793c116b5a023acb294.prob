@@ -1,1 +1,1 @@
-{"name":"Local: lol","url":"d:\\Academics\\C++\\lol.cpp","tests":[{"id":1723487161442,"input":"2\n5\n1 2 3 4 5\n3\n1 2 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\lol.cpp","group":"local","local":true}
+{"name":"Local: lol","url":"d:\\Academics\\C++\\lol.cpp","tests":[{"id":1723487161442,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\lol.cpp","group":"local","local":true}
