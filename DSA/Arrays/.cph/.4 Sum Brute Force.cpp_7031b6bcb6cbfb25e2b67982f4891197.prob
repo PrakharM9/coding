@@ -1,0 +1,1 @@
+{"name":"Local: 4 Sum Brute Force","url":"d:\\Academics\\C++\\DSA\\Arrays\\4 Sum Brute Force.cpp","tests":[{"id":1757935953647,"input":"6\n1 0 -1 0 -2 2 \n0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\DSA\\Arrays\\4 Sum Brute Force.cpp","group":"local","local":true}
