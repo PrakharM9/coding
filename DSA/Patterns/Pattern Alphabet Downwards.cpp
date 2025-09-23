@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-int pattern(int n){
+void pattern(int n){
     char ch='A'+(n-1);
     char ch2=ch;
     for(int i=0;i<n;i++){
@@ -11,11 +11,11 @@ int pattern(int n){
         }
         cout<<endl;
         ch=ch2;
+    }
 }
 int main(){
     int num;
     cin>>num;
     pattern(num);
-    }
     return 0;
 }
