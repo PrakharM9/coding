@@ -91,7 +91,8 @@ Node* removeKthElement(Node* head,int k){
 
 }
 void deleteNode(Node* temp){
-    Node* prev=temp->back;
+    // here we have been informed that element to be deleted will not be head
+    Node* prev=temp->back;  
     Node* front=temp->next;
     if(front==NULL){
         prev->next=nullptr;

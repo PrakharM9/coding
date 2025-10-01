@@ -11,7 +11,7 @@ class Node{
     }
     public:
     Node(int data1){
-        data=data1;
+        data=data1;   
         next=nullptr;
     }
 };
@@ -34,6 +34,7 @@ Node* convertArr2LL(vector<int> &arr){
 }
 Node* insertHead(Node* head,int value){
     return new Node(value,head);
+    
 }
 Node* insertPosition(Node* head, int el, int k){
     if(head==NULL){
@@ -109,5 +110,5 @@ int main(){
     print(head);
     head=insertbeforevalue(head,10,8);
     print(head);
-    return 0;
+    return 0; 
 }
