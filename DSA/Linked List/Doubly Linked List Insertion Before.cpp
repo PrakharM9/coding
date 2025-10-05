@@ -27,7 +27,7 @@ Node* convertArr2LL(vector<int> &arr){
     Node* head=new Node(arr[0]);
     Node* mover=head;
     for(int i=1;i<arr.size();i++){
-        Node* temp=new Node(arr[i]);
+        Node* temp=new Node(arr[i],nullptr,mover);
         mover->next=temp;
         mover=temp;
     }
@@ -41,13 +41,15 @@ Node* insertBeforeHead(Node* head,int val){
 Node* insertBeforeTail(Node* head,int value){
     if(head->next==NULL){
        return insertBeforeHead(head,value);
-    }
+    } 
     Node* tail=head;
     while(tail->next!=NULL){
         tail=tail->next;
     }
-    Node* newNode=new Node(value,nullptr,tail);
-    tail->next=newNode;
+    Node* prev=tail->back;
+    Node* newNode=new Node(value,prev,tail);
+    prev->next=newNode;
+    tail->back=newNode;
     return head;
 }
 Node* insertKthElement(Node* head,int k,int value){
@@ -66,6 +68,13 @@ Node* insertKthElement(Node* head,int k,int value){
     prev->next=newnode;
     temp->back=newnode;
     return head;
+}
+void insertbeforeNode(Node* node,int val){
+    // here we will not insert element before head and node given is not head
+    Node* prev=node->back;
+    Node* newNode=new Node(val,node,prev);
+    prev->next=newNode;
+    node->back=newNode;
 }
 int main()
 {

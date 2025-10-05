@@ -33,15 +33,21 @@ Node* convertArr2LL(vector<int> &arr){
     }
     return head;
 }
-Node* insertBeforeHead(Node* head,int val){
-    Node* newhead=new Node(val,head,nullptr);
-    head->back=newhead;
-    return newhead;
-}
-Node* insertBeforeTail(Node* head,int value){
+Node* insertAfterHead(Node* head,int val){
+    if(head==NULL)return head;
     if(head->next==NULL){
-        return insertBeforeHead(head,value);
+        Node* newnode=new Node(val);
+        head->next=newnode;
+        newnode->back=head;
+        return head;
     }
+    Node* newNode=new Node(val,head->next,head);
+    head->next->back=newNode;
+    head->next=newNode;
+    return head;
+}
+Node* insertAfterTail(Node* head,int value){
+    if(head==NULL)return new Node(value);
     Node* tail=head;
     while(tail->next!=NULL){
         tail=tail->next;
@@ -51,41 +57,30 @@ Node* insertBeforeTail(Node* head,int value){
     return head;
 }
 Node* insertKthElement(Node* head,int k,int value){
-    Node *newnode=new Node(value);
-    if(k==1){
-        return insertBeforeHead(head,value);
-    }
+    if(head==NULL)return head;
     Node* temp=head;
-    int count=1;
+    int count=0;
     while(temp!=NULL){
         count++;
         if(count==k)break;
         temp=temp->next;
     }
-    if(temp!=NULL)
+    if(temp==NULL)
     {
-        newnode->next=temp->next;
-        newnode->back=temp;
-
-        if(temp->next!=NULL)
-        {
-            temp->next->back=newnode;
-        }
-        temp->next=newnode;
+        return NULL;
     }
-/*Node* prev=temp->back;
-Node* newnode=new Node(value,temp,prev);
-prev->next=newnode;
-temp->back=newnode;*/
+    Node *newnode=new Node(value,temp->next,temp);
+    if(temp->next!=NULL){
+        temp->next->back=newnode;
+    }
+    temp->next=newnode;
     return head;
 }
 int main()
 {
-    vector<int> arr={12, 5, 8, 7};
+    vector<int> arr={12,10,15};
     Node* head=convertArr2LL(arr);
-    int value,pos;
-    cin>>value>>pos;
-    head=insertKthElement(head,pos,value);
+    head=insertAfterHead(head,5);
     print(head);
     return 0;
 }
