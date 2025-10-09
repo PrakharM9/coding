@@ -1,0 +1,1 @@
+{"name":"Local: Sort a Linked List(Brute Force)","url":"d:\\Academics\\C++\\DSA\\Linked List\\Sort a Linked List(Brute Force).cpp","tests":[{"id":1760001330303,"input":"6\n34 45 21 24 23 31","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\DSA\\Linked List\\Sort a Linked List(Brute Force).cpp","group":"local","local":true}

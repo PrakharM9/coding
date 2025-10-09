@@ -1,0 +1,1 @@
+{"name":"Local: Sort a Linked List(Optimal)","url":"d:\\Academics\\C++\\DSA\\Linked List\\Sort a Linked List(Optimal).cpp","tests":[{"id":1760002376999,"input":"6\n34 65 12 35 61 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\DSA\\Linked List\\Sort a Linked List(Optimal).cpp","group":"local","local":true}
