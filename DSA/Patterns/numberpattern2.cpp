@@ -25,15 +25,17 @@ int pattern(int n){
     }
     n3=n;
     n4=n;
+    n2=2;
     for(int i=0;i<n-1;i++){
-        n2++;
-        for(int j=n-i;j>0;j--){
+        for(int j=n-i;j>2;j--){
             cout<<n4<<" ";
             n4--;
         }
+        // for(int )
         for(int j=0;j<=2*i;j++){
             cout<<n2<<" ";
         }
+        n2++;
         n4=n;
         cout<<endl;
     }
