@@ -1,0 +1,1 @@
+{"name":"Local: Stack Polish Notation Conversions","url":"d:\\Academics\\C++\\DSA\\Stack\\Stack Polish Notation Conversions.cpp","tests":[{"id":1762356242612,"input":"/-AB*+DEF","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Academics\\C++\\DSA\\Stack\\Stack Polish Notation Conversions.cpp","group":"local","local":true}
